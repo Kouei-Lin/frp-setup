@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # 進到/srv
 cd /srv
