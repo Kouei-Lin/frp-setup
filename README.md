@@ -46,8 +46,8 @@ $ git clone https://github.com/Kouei-Lin/frp-setup
 
 ### 伺服器和埠編輯
 ```
-$ cd ~/frp-setup/frp。
-$ vi frpc.ini`
+$ cd ~/frp-setup/frp
+$ vi frpc.ini
 $ cd ~/frp-setup
 ```
 
