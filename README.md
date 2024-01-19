@@ -16,13 +16,16 @@
 └── frpc_22.conf
 ```
 
-## 事前準備
+## 事前須知
 
-### Rasberry Pi 燒錄
+### Rasberry Pi燒錄
 前往[Rasberry Pi官網](https://www.raspberrypi.com/software/)下載軟體，並燒錄你的`Rasberry Pi`。
 燒錄好後，啟動`Rasberry Pi`並將其連結網路。燒錄時建立的帳密請記下，並於燒錄時開啟`ssh`設定，帳密於登入`Rasberry Pi`和`ssh`連線測試時會有需要。
 
-本腳本僅於
+本腳本適用於`Rasberry Pi OS Lite (64-bit)`系統。
+
+### FRP
+本腳本使用之`FRP`源於[fatedier](https://github.com/fatedier//frp/releases/)的`v0.44.0`版本，此部份功勞全歸功於`fatedier`。
 
 ## Rasberry Pi FRP設置
 
