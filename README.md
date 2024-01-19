@@ -2,6 +2,7 @@
 簡易腳本來加速Rasberry Pi 的FRP 設置。
 
 ## Repo架構
+```
 ├── README.md
 ├── frp
 │   ├── LICENSE
@@ -13,6 +14,7 @@
 │   └── frps_full.ini
 ├── frp.sh
 └── frpc_22.conf
+```
 
 ## 事前準備
 
@@ -30,9 +32,9 @@
 `sudo apt install git wget supervisor`
 
 ### 腳本下載 
-`cd ~`
+`cd ~`回主目錄。
 
-`su`切換`root。
+`su`切換`root`。
 
 `git clone https://github.com/Kouei-Lin/frp-setup`取得腳本。
 
