@@ -66,7 +66,7 @@ $ ./frp.sh
 $ ssh USER_!!@SERVER_ADDR_!! -p SERVER_PORT_!!
 ```
 
-- `USER_!!`        = 伺服器登錄之帳戶名
+- `USER_!!` = 伺服器登錄之帳戶名
 - `SERVER_ADDR_!!` = `frpc.ini`自行編輯之`SERVER_ADDR_!!`
 - `SERVER_PORT_!!` = `frpc.ini`自行編輯之`SERVER_PORT_!!`
 
