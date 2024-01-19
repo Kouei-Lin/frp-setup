@@ -1,7 +1,7 @@
-## 簡介
+# 1.簡介
 簡易腳本來加速Rasberry Pi 的FRP 設置。
 
-## Repo架構
+# 2.Repo架構
 ```
 ├── README.md
 ├── frp
@@ -16,7 +16,7 @@
 └── frpc_22.conf
 ```
 
-## 事前須知
+# 3.事前須知
 
 ### Rasberry Pi燒錄
 前往[Rasberry Pi官網](https://www.raspberrypi.com/software/)下載軟體，並燒錄你的`Rasberry Pi`。
@@ -27,7 +27,7 @@
 ### FRP
 本腳本使用之`FRP`源於[fatedier](https://github.com/fatedier//frp/releases/)的`v0.44.0`版本，此部份功勞全歸功於`fatedier`。
 
-## Rasberry Pi FRP設置
+# 4.Rasberry Pi FRP設置
 
 ### Rasberry Pi 系統初始＆套件安裝
 `sudo apt update && sudo apt upgrade`
@@ -53,7 +53,7 @@
 
 `./frp.sh`啟動腳本。
 
-## 測試FRP
+# 5.測試FRP
 
 ### 連線測試
 `ssh USER_!!@SERVER_ADDR_!! -p SERVER_PORT_!!`
