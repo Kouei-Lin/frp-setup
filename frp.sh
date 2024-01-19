@@ -7,7 +7,7 @@ cd /srv
 wget https://github.com/fatedier/frp/releases/download/v0.44.0/frp_0.44.0_linux_arm64.tar.gz
 
 # 解tar
-tar xvzf frp_0.44.0_linux_arm.tar.gz
+tar xvzf frp_0.44.0_linux_arm64.tar.gz
 
 # 改名frp
 mv frp_0.44.0_linux_arm64 frp
