@@ -30,33 +30,39 @@
 # 4.Rasberry Pi FRP設置
 
 ### Rasberry Pi 系統初始＆套件安裝
-`sudo apt update && sudo apt upgrade`套件系統更新。
+```
+$ sudo apt update && sudo apt upgrade
+$ sudo apt install git wget supervisor
+```
 
-`sudo apt install git wget supervisor`套件安裝，如果有其他套件需求，如編輯器，請於此添加安裝。
+如有其他套件需求，可自行添加。
 
 ### 腳本下載 
-`cd ~`回主目錄。
-
-`su`切換`root`。
-
-`git clone https://github.com/Kouei-Lin/frp-setup`取得腳本。
+```
+$ cd ~
+$ su
+$ git clone https://github.com/Kouei-Lin/frp-setup
+```
 
 ### 伺服器和埠編輯
-`cd frp-setup/frp`進入`frp`。
-
-`vi frpc.ini`編輯有`!!`的部份，其中包含伺服器和埠等資訊。
-
-`cd ~/frp-setup`回到`frp-setup`文件夾。
+```
+$ cd ~/frp-setup/frp。
+$ vi frpc.ini`
+$ cd ~/frp-setup
+```
 
 ### 啟動腳本
-`chmod +x frp.sh`開啟腳本權限。
-
-`./frp.sh`啟動腳本。
+```
+$ chmod +x frp.sh
+$ ./frp.sh
+```
 
 # 5.測試FRP
 
 ### 連線測試
-`ssh USER_!!@SERVER_ADDR_!! -p SERVER_PORT_!!`於另一台機器進行連線測試。
+```
+$ ssh USER_!!@SERVER_ADDR_!! -p SERVER_PORT_!!
+```
 
 - USER_!! = 伺服器登錄之帳戶名
 - SERVER_ADDR_!! = `frpc.ini`自行編輯之`SERVER_ADDR_!!`
