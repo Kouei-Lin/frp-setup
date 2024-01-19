@@ -20,7 +20,7 @@
 
 ### Rasberry Pi燒錄
 前往[Rasberry Pi官網](https://www.raspberrypi.com/software/)下載軟體，並燒錄你的`Rasberry Pi`。
-燒錄好後，啟動`Rasberry Pi`並將其連結網路。燒錄時建立的帳密請記下，並於燒錄時開啟`ssh`設定，帳密於登入`Rasberry Pi`和`ssh`連線測試時會有需要。
+燒錄好後，啟動`Rasberry Pi`並將其連結網路。燒錄時請將`ssh`功能啟用，並記好帳密。
 
 本腳本適用於`Rasberry Pi OS Lite (64-bit)`系統。
 
@@ -58,7 +58,7 @@
 ### 連線測試
 `ssh USER_!!@SERVER_ADDR_!! -p SERVER_PORT_!!`
 
-- USER_!! = 燒錄`Rasberry Pi`時設定之帳號名
+- USER_!! = 伺服器登錄之帳戶名
 - SERVER_ADDR_!! = `froc.ini`自行編輯之`SERVER_ADDR_!!`
 - SERVER_PORT_!! = `frpc.ini`自行編輯之`SERVER_PORT_!!`
 
