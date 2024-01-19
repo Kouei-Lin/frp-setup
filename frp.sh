@@ -1,4 +1,3 @@
-mv frp /srv/
-cd ~/frp-setup/
-mv frpc_22.conf /etc/supervisor/conf.d/
+mv ~/frp-setup/frp /srv/
+mv ~/frp-setup/frpc_22.conf /etc/supervisor/conf.d/
 supervisorctl reload
