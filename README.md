@@ -48,12 +48,12 @@ $ git clone https://github.com/Kouei-Lin/frp-setup
 ```
 $ cd ~/frp-setup/frp
 $ vi frpc.ini
-$ cd ~/frp-setup
 ```
 於此編輯`frpc.ini`中有`!!`等伺服器相關資訊。
 
 ### 啟動腳本
 ```
+$ cd ~/frp-setup
 $ chmod +x frp.sh
 $ ./frp.sh
 ```
