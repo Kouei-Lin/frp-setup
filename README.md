@@ -31,8 +31,9 @@
 
 ### Rasberry Pi 系統初始＆套件安裝
 ```
-$ sudo apt update && sudo apt upgrade
-$ sudo apt install git supervisor
+$ su
+$ apt update && sudo apt upgrade
+$ apt install git supervisor
 ```
 
 如有其他套件需求，可自行添加。
