@@ -50,6 +50,7 @@ $ cd ~/frp-setup/frp
 $ vi frpc.ini
 $ cd ~/frp-setup
 ```
+於此編輯`frpc.ini`中有`!!`等伺服器相關資訊。
 
 ### 啟動腳本
 ```
