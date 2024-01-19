@@ -30,9 +30,9 @@
 # 4.Rasberry Pi FRP設置
 
 ### Rasberry Pi 系統初始＆套件安裝
-`sudo apt update && sudo apt upgrade`
+`sudo apt update && sudo apt upgrade`套件系統更新。
 
-`sudo apt install git wget supervisor`
+`sudo apt install git wget supervisor`套件安裝，如果有其他套件需求，如編輯器，請於此添加安裝。
 
 ### 腳本下載 
 `cd ~`回主目錄。
@@ -44,7 +44,7 @@
 ### 伺服器和埠編輯
 `cd frp-setup/frp`進入`frp`。
 
-`vi frpc.ini`編輯使用之伺服器和埠資訊。
+`vi frpc.ini`編輯有`!!`的部份，其中包含伺服器和埠等資訊。
 
 `cd ~/frp-setup`回到`frp-setup`文件夾。
 
