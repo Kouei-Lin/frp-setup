@@ -42,11 +42,11 @@
 `git clone https://github.com/Kouei-Lin/frp-setup`取得腳本。
 
 ### 伺服器和埠編輯
-`cd frp-setup/frp/`進入`frp`。
+`cd frp-setup/frp`進入`frp`。
 
 `vi frpc.ini`編輯使用之伺服器和埠資訊。
 
-`cd ..`回到腳本文件夾。
+`cd ~/frp-setup`回到`frp-setup`文件夾。
 
 ### 啟動腳本
 `chmod +x frp.sh`開啟腳本權限。
@@ -58,7 +58,7 @@
 ### 連線測試
 `ssh USER_!!@SERVER_ADDR_!! -p SERVER_PORT_!!`
 
-- USER_!! = 燒錄`Rasberry Pi時設定之帳號名
+- USER_!! = 燒錄`Rasberry Pi`時設定之帳號名
 - SERVER_ADDR_!! = `froc.ini`自行編輯之`SERVER_ADDR_!!`
 - SERVER_PORT_!! = `frpc.ini`自行編輯之`SERVER_PORT_!!`
 
