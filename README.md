@@ -60,6 +60,8 @@ $ ./frp.sh
 # 5.測試FRP
 
 ### 連線測試
+於另外一台電腦測試`ssh`連線。
+
 ```
 $ ssh USER_!!@SERVER_ADDR_!! -p SERVER_PORT_!!
 ```
