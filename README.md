@@ -56,10 +56,10 @@
 # 5.測試FRP
 
 ### 連線測試
-`ssh USER_!!@SERVER_ADDR_!! -p SERVER_PORT_!!`
+`ssh USER_!!@SERVER_ADDR_!! -p SERVER_PORT_!!`於另一台機器進行連線測試。
 
 - USER_!! = 伺服器登錄之帳戶名
-- SERVER_ADDR_!! = `froc.ini`自行編輯之`SERVER_ADDR_!!`
+- SERVER_ADDR_!! = `frpc.ini`自行編輯之`SERVER_ADDR_!!`
 - SERVER_PORT_!! = `frpc.ini`自行編輯之`SERVER_PORT_!!`
 
 建議進行複數次連線測試，也推薦將`Rasberry Pi`關機重開機後進行測試確保`supervisor`正常運作。
