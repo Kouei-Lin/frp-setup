@@ -40,7 +40,6 @@ $ sudo apt install git wget supervisor
 ### 腳本下載 
 ```
 $ cd ~
-$ su
 $ git clone https://github.com/Kouei-Lin/frp-setup
 ```
 
