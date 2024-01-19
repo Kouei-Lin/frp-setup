@@ -1,7 +1,19 @@
 #!/bin/sh
 
-# 將frp文件夾移動至/srv/
-mv ~/frp-setup/frp /srv/
+# 進到/srv
+cd /srv
+
+# 取得frp v0.44.0
+wget https://github.com/fatedier/frp/releases/download/v0.44.0/frp_0.44.0_linux_arm64.tar.gz
+
+# 解tar
+tar xvzf frp_0.44.0_linux_arm.tar.gz
+
+# 改名frp
+mv frp_0.44.0_linux_arm64 frp
+
+# 移動frpc.ini至frp
+mv ~/frp-setup/frpc.ini /srv/frp/
 
 # 啟動frpc利用定義之frpc.ini
 /srv/frp/frpc -c /srv/frp/frpc.ini
