@@ -10,7 +10,7 @@
 本腳本適用於`Rasberry Pi OS Lite (64-bit)`系統。
 
 ### FRP
-本腳本使用之`FRP`源於[fatedier](https://github.com/fatedier//frp/releases/)的`v0.44.0`版本，此部份功勞全歸功於`fatedier`。
+本腳本使用之`FRP`源於[fatedier](https://github.com/fatedier//frp/releases/)的`v0.44.0 arm64`版本，此部份功勞全歸功於`fatedier`。
 
 # 3.Rasberry Pi FRP設置
 
