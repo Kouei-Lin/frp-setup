@@ -1,25 +1,52 @@
 #!/bin/bash
 
-# 進到/srv
-cd /srv
+# Set frp version and architecture variables
+FRP_VERSION="0.44.0"
+FRP_ARCH="arm64"
 
-# 取得frp v0.44.0
-wget https://github.com/fatedier/frp/releases/download/v0.44.0/frp_0.44.0_linux_arm64.tar.gz
+# Move to /srv
+cd /srv && \
+# Download frp with dynamic version and architecture
+wget "https://github.com/fatedier/frp/releases/download/v$FRP_VERSION/frp_${FRP_VERSION}_linux_$FRP_ARCH.tar.gz" && \
+# Extract the tar file
+tar xvzf "frp_${FRP_VERSION}_linux_$FRP_ARCH.tar.gz" && \
+# Rename the extracted directory to 'frp'
+mv "frp_${FRP_VERSION}_linux_$FRP_ARCH" frp && \
 
-# 解tar
-tar xvzf frp_0.44.0_linux_arm64.tar.gz
+# Echo frpc.ini configuration to /srv/frp/frpc.ini
+echo "
+[common]
+server_addr = SERVER_ADDR_!!
+server_port = SERVER_PORT_!!
+admin_addr = ADMIN_ADDR_!!
+admin_port = ADMIN_PORT_!!
 
-# 改名frp
-mv frp_0.44.0_linux_arm64 frp
+[ssh_SERVICE_NAME!!]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 22
+remote_port = REMOTE_PORT_!!
+use_encryption = true
+use_compression = true
+" > /srv/frp/frpc.ini && \
 
-# 移動frpc.ini至frp
-mv ~/frp-setup/frpc.ini /srv/frp/
+# systemd service
+echo "
+[Unit]
+Description=frp client service
 
-# 將frpc_22.conf移動至/etc/supervisor/conf.d
-mv ~/frp-setup/frpc_22.conf /etc/supervisor/conf.d/
+[Service]
+ExecStart=/bin/bash -c 'cd /srv/frp && /srv/frp/frpc -c frpc.ini'
+WorkingDirectory=/srv/frp
+Restart=always
+RestartSec=3
 
-# 重啟supervisor
-supervisorctl reload
+[Install]
+WantedBy=multi-user.target
+" | sudo tee /etc/systemd/system/frpc.service && \
 
-# 啟動frp利用frpc.ini
-/srv/frp/frpc -c /srv/frp/frpc.ini
+# systemd
+sudo systemctl daemon-reload && \
+sudo systemctl enable frpc.service && \
+sudo systemctl start frpc.service
+
