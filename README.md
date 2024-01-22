@@ -25,8 +25,7 @@ $ apt install git
 
 ### 腳本下載 
 ```
-$ cd ~
-$ git clone https://github.com/Kouei-Lin/frp-setup
+$ git clone https://github.com/Kouei-Lin/frp-setup ~/frp-setup
 ```
 
 ### 伺服器和埠編輯
