@@ -10,16 +10,16 @@ configure_frp() {
     local SERVICE_NAME="SSH_SERVICE_NAME_!!"
     local REMOTE_PORT="REMOTE_PORT_!!"
 
-    # Move to /srv
+    # 進/srv
     cd /srv && \
-    # Download frp with dynamic version and architecture
+    # 下載FRP
     wget "https://github.com/fatedier/frp/releases/download/v$FRP_VERSION/frp_${FRP_VERSION}_linux_$FRP_ARCH.tar.gz" && \
-    # Extract the tar file
+    # 解tar
     tar xvzf "frp_${FRP_VERSION}_linux_$FRP_ARCH.tar.gz" && \
-    # Rename the extracted directory to 'frp'
+    # 更名
     mv "frp_${FRP_VERSION}_linux_$FRP_ARCH" frp && \
 
-    # Echo configuration to /srv/frp/frpc.ini
+    # echo config 進 /srv/frp/frpc.ini
     echo "
     [common]
     server_addr = $SERVER_ADDR
@@ -36,7 +36,7 @@ configure_frp() {
     use_compression = true
     " > /srv/frp/frpc.ini && \
 
-    # systemd service setup
+    # systemd 服務設置
     echo "
     [Unit]
     Description=frp client service
@@ -51,7 +51,7 @@ configure_frp() {
     WantedBy=multi-user.target
     " | sudo tee /etc/systemd/system/frpc.service && \
 
-    # systemd reload
+    # systemd 重啟
     sudo systemctl daemon-reload && \
     sudo systemctl enable frpc.service && \
     sudo systemctl start frpc.service
