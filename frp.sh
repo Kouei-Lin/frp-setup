@@ -57,6 +57,6 @@ configure_frp() {
     sudo systemctl start frpc.service
 }
 
-# Call the function
+# 叫 function
 configure_frp
 
