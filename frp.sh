@@ -29,7 +29,7 @@ server_port = $SERVER_PORT
 admin_addr = $ADMIN_ADDR
 admin_port = $ADMIN_PORT
 
-[$SERVICE_NAME]
+[ssh_$SERVICE_NAME]
 type = tcp
 local_ip = 127.0.0.1
 local_port = 22
