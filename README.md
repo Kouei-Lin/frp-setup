@@ -18,7 +18,7 @@
 ```
 $ su
 $ apt update && apt upgrade
-$ apt install git supervisor
+$ apt install git
 ```
 
 如有其他套件需求，可自行添加。
@@ -32,9 +32,9 @@ $ git clone https://github.com/Kouei-Lin/frp-setup
 ### 伺服器和埠編輯
 ```
 $ cd ~/frp-setup
-$ vi frpc.ini
+$ vi frp.sh
 ```
-於此編輯`frpc.ini`中有`!!`等伺服器相關資訊。
+於此編輯環境變數。
 
 ### 啟動腳本
 ```
