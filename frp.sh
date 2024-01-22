@@ -19,7 +19,7 @@ configure_frp() {
     # Rename the extracted directory to 'frp'
     mv "frp_${FRP_VERSION}_linux_$FRP_ARCH" frp && \
 
-    # Echo frpc.ini configuration to /srv/frp/frpc.ini
+    # Echo configuration to /srv/frp/frpc.ini
     echo "
     [common]
     server_addr = $SERVER_ADDR
@@ -36,7 +36,7 @@ configure_frp() {
     use_compression = true
     " > /srv/frp/frpc.ini && \
 
-    # systemd service
+    # systemd service setup
     echo "
     [Unit]
     Description=frp client service
@@ -51,7 +51,7 @@ configure_frp() {
     WantedBy=multi-user.target
     " | sudo tee /etc/systemd/system/frpc.service && \
 
-    # systemd
+    # systemd reload
     sudo systemctl daemon-reload && \
     sudo systemctl enable frpc.service && \
     sudo systemctl start frpc.service
