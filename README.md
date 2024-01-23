@@ -54,4 +54,4 @@ $ ssh USER_!!@SERVER_ADDR_!! -p SERVER_PORT_!!
 - `SERVER_ADDR_!!` = `frpc.ini`自行編輯之`SERVER_ADDR_!!`
 - `SERVER_PORT_!!` = `frpc.ini`自行編輯之`REMOTE_PORT_!!`
 
-建議進行複數次連線測試，也推薦將`Raspberry Pi`關機重開機後進行測試確保`supervisor`正常運作。
+建議進行複數次連線測試，也推薦將`Raspberry Pi`關機重開機後進行測試確保`systemd`正常運作。
