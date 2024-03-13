@@ -3,8 +3,8 @@
 
 # 2.事前須知
 
-### Rasberry Pi燒錄
-前往[Rasberry Pi官網](https://www.raspberrypi.com/software/)下載軟體，並燒錄你的`Raspberry Pi`。
+### Raspberry Pi燒錄
+前往[Raspberry Pi官網](https://www.raspberrypi.com/software/)下載軟體，並燒錄你的`Raspberry Pi`。
 燒錄好後，啟動`Raspberry Pi`並將其連結網路。燒錄時請將`ssh`功能啟用，並記好帳密。
 
 本腳本適用於`Raspberry Pi OS Lite (64-bit)`系統。
