@@ -37,7 +37,7 @@ $ vi frp.sh
 ### 啟動腳本
 ```
 $ chmod +x frp.sh
-$ sudo /frp.sh
+$ sudo ./frp.sh
 ```
 
 # 4.測試FRP
