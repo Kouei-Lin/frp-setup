@@ -1,5 +1,5 @@
 # 1.簡介
-簡易腳本來加速Raspberry Pi 的FRP 設置。
+簡易腳本來加速`Raspberry Pi` 的`FRP` 設置。
 
 # 2.事前須知
 
