@@ -3,12 +3,12 @@
 configure_frp() {
     local FRP_VERSION="0.44.0"
     local FRP_ARCH="arm64"
-    local SERVER_ADDR="SERVER_ADDR_!!"
-    local SERVER_PORT="SERVER_PORT_!!"
-    local ADMIN_ADDR="ADMIN_ADDR_!!"
-    local ADMIN_PORT="ADMIN_PORT_!!"
-    local SERVICE_NAME="SSH_SERVICE_NAME_!!"
-    local REMOTE_PORT="REMOTE_PORT_!!"
+    local SERVER_ADDR="SERVER_ADDR"
+    local SERVER_PORT="SERVER_PORT"
+    local ADMIN_ADDR="ADMIN_ADDR"
+    local ADMIN_PORT="ADMIN_PORT"
+    local SERVICE_NAME="SSH_SERVICE_NAME"
+    local REMOTE_PORT="REMOTE_PORT"
 
     # 進/srv
     cd /srv && \

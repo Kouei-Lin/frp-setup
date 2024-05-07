@@ -47,11 +47,11 @@ $ ./frp.sh
 於另外一台電腦測試`ssh`連線。
 
 ```
-$ ssh USER_!!@SERVER_ADDR_!! -p SERVER_PORT_!!
+$ ssh USER@SERVER_ADDR -p SERVER_PORT
 ```
 
-- `USER_!!` = `Raspberry Pi`登錄之帳戶名
-- `SERVER_ADDR_!!` = `frpc.ini`自行編輯之`SERVER_ADDR_!!`
-- `SERVER_PORT_!!` = `frpc.ini`自行編輯之`REMOTE_PORT_!!`
+- `USER` = `Raspberry Pi`登錄之帳戶名
+- `SERVER_ADDR` = `frpc.ini`自行編輯之`SERVER_ADDR`
+- `SERVER_PORT` = `frpc.ini`自行編輯之`REMOTE_PORT`
 
 建議進行複數次連線測試，也推薦將`Raspberry Pi`關機重開機後進行測試確保`systemd`正常運作。
