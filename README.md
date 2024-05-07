@@ -16,9 +16,8 @@
 
 ### Raspberry Pi 系統初始＆套件安裝
 ```
-$ su
-$ apt update && apt upgrade
-$ apt install git
+$ sudo apt update && apt upgrade
+$ sudo apt install git
 ```
 
 如有其他套件需求，可自行添加。
@@ -38,7 +37,7 @@ $ vi frp.sh
 ### 啟動腳本
 ```
 $ chmod +x frp.sh
-$ ./frp.sh
+$ sudo /frp.sh
 ```
 
 # 4.測試FRP
